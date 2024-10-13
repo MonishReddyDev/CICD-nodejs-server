@@ -27,7 +27,7 @@ app.get("/api/products", (req, res) => {
 
     const response = {
         "products": "protien powder",
-        "success": "Hi from the company!"
+
     }
 
     res.status(200).json(response)
