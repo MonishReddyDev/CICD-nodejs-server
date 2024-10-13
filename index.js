@@ -22,6 +22,17 @@ app.get("/api/users", (req, res) => {
 
 })
 
+
+app.get("/api/products", (req, res) => {
+
+    const response = {
+        "products": "protien powder",
+        "success": "Hi from the company!"
+    }
+
+    res.status(200).json(response)
+
+})
 // Start the server
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
